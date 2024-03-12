@@ -24,7 +24,7 @@ class LaraveliaController extends Controller
                 'currency' => 'usd',
                 'payment_method' => $request->payment_method,
                 'description' => 'Demo payment with stripe',
-                'confirm' => false,
+                'confirm' => true,
                 'receipt_email' => 'mh271786@gmail.com',
             ]);
         } catch (CardException $th) {
